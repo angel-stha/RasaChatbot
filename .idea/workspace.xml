@@ -11,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/domain.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/endpoints.yml" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620706422928</updated>
-      <workItem from="1620706425316" duration="16306000" />
+      <workItem from="1620706425316" duration="17080000" />
     </task>
     <servers />
   </component>
