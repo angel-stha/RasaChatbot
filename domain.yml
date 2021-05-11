@@ -8,10 +8,14 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - intro_covid
+  - symptoms_covid
+  - spread_covid
+  - time_infection
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey! What do you like to know about Covid 19? and condition of Nepal?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -27,8 +31,46 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am your Covid Sathi, powered by Rasa."
 
+  utter_intro:
+    - text: "Coronavirus disease (COVID-19) is an infectious Severe acute respiratory syndrome (SARS) disease caused by a newly discovered coronavirus.
+      On 31 December 2019, WHO was informed of cases of pneumonia of unknown cause in Wuhan City, China. A novel coronavirus was identified as the cause by Chinese authorities on 7 January 2020 and was temporarily named “2019-nCoV” The World Health Organization declared the outbreak a Public Health Emergency of International Concern on 30 January 2020, and a pandemic on 11 March 2020."
+
+  utter_symptoms:
+    -text: " Symptoms depends on the probation period of 2 to 14 days. You may or may not show symptoms. But you can be a healthy carrier of Covid.
+             Most common symptoms:
+             fever
+             dry cough
+             tiredness
+             loss of taste or smell
+             Less common symptoms:
+             aches and pains
+             sore throat
+             diarrhoea
+             conjunctivitis
+             headache
+             a rash on skin, or discolouration of fingers or toes
+             As due to Covid, your immunity becomes weaker, your own illness or weakness like headache, allergies, sugar, pressure may affect ypu more.
+             "
+  utter_prevention:
+    -text: "Despite all the situations, don't panic. Take good care of your physical and mental health.
+             Be kind to yourself and others.
+             Reach out for help if you need it.
+             Keep Distances.
+             Stay six feet away from others whenever possible.
+             Wear a cloth mask that covers your mouth and nose when around others.
+             Wash your hands often. If soap is not available, use a hand sanitizer that contains at least 60% alcohol.
+             Avoid crowded indoor spaces. Bring in outdoor air as much as possible.
+             Stay self-isolated at home if you are feeling ill with symptoms that could be COVID-19 or have a positive test for COVID-19.
+             Clean and disinfect frequently touched surfaces."
+  utter_spreadness:
+    - text: " COVID-19 is likely spread:
+             When the virus travels in respiratory droplets when an infected person coughs, sneezes, talks, sings or breathes near you (within six feet). This is thought to be the main way COVID-19 is spread.
+             When the virus travels in small respiratory droplets that linger in the air for minutes to hours from an infected person who is more than six feet away or has since left the space. This method of spread is more likely to occur in enclosed spaces with poor ventilation.
+             From close contact (touching, shaking hands) with an infected person.
+             By touching surfaces that the virus has landed on, then touching your eyes, mouth, or nose before washing your hands. (Not thought to spread easily by this method.)
+             COVID-19 enters your body through your mouth, nose or eyes (directly from the airborne droplets or from transfer of the virus from your hands to your face). The virus travels to the back of your nasal passages and mucous membrane in the back of your throat. It attaches to cells there, begins to multiply and moves into lung tissue. From there, the virus can spread to other body tissues."
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

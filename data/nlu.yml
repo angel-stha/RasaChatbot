@@ -9,7 +9,7 @@ nlu:
     - hello there
     - good morning
     - good evening
-    - moin
+    - morning
     - hey there
     - let's go
     - hey dude
@@ -90,3 +90,40 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: intro_covid
+  # How will user ask information about corona
+  examples: |
+    - What is corona
+    - what is  covid 19
+    - what is  covid
+    - Covid
+    - I want to know about covid
+    - Tell me about corona
+    - Can I know about corona
+    - Give me information about corona
+- intent: symptoms_covid
+  # Asking symptoms of covid
+  examples: |
+    - What are symptoms of covid
+    - What happens when we suffer from covid
+    - How to know if I am covid patient
+    - How to know if I am infected.
+    - Symptoms
+    - corona symptoms
+    - identify covid patient
+- intent: spread_covid
+  # Asking how does the covid spread
+  examples: |
+    - how does the COVID-19 spread from person to person
+    - how does corona spread?
+    - how is corona transfer
+    - transfer of covid
+    - spread of covid
+- intent: time_infection
+  examples: |
+    - How long is a person infected with COVID-19 considered contagious?
+    - When will an infected person become healthy?
+    - How long will I be infected?
+    - How long does corona take to be cured?
+
