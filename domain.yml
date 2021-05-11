@@ -12,7 +12,7 @@ intents:
   - symptoms_covid
   - spread_covid
   - time_infection
-
+  - today_cases
 responses:
   utter_greet:
   - text: "Hey! What do you like to know about Covid 19? and condition of Nepal?"
@@ -38,7 +38,7 @@ responses:
       On 31 December 2019, WHO was informed of cases of pneumonia of unknown cause in Wuhan City, China. A novel coronavirus was identified as the cause by Chinese authorities on 7 January 2020 and was temporarily named “2019-nCoV” The World Health Organization declared the outbreak a Public Health Emergency of International Concern on 30 January 2020, and a pandemic on 11 March 2020."
 
   utter_symptoms:
-    -text: " Symptoms depends on the probation period of 2 to 14 days. You may or may not show symptoms. But you can be a healthy carrier of Covid.
+    - text: " Symptoms depends on the probation period of 2 to 14 days. You may or may not show symptoms. But you can be a healthy carrier of Covid.
              Most common symptoms:
              fever
              dry cough
@@ -54,7 +54,7 @@ responses:
              As due to Covid, your immunity becomes weaker, your own illness or weakness like headache, allergies, sugar, pressure may affect ypu more.
              "
   utter_prevention:
-    -text: "Despite all the situations, don't panic. Take good care of your physical and mental health.
+    - text: "Despite all the situations, don't panic. Take good care of your physical and mental health.
              Be kind to yourself and others.
              Reach out for help if you need it.
              Keep Distances.
@@ -71,6 +71,24 @@ responses:
              From close contact (touching, shaking hands) with an infected person.
              By touching surfaces that the virus has landed on, then touching your eyes, mouth, or nose before washing your hands. (Not thought to spread easily by this method.)
              COVID-19 enters your body through your mouth, nose or eyes (directly from the airborne droplets or from transfer of the virus from your hands to your face). The virus travels to the back of your nasal passages and mucous membrane in the back of your throat. It attaches to cells there, begins to multiply and moves into lung tissue. From there, the virus can spread to other body tissues."
+  utter_time:
+    - text: " Researchers are still learning about COVID-19. What is known is that people infected with COVID-19 can spread the virus to others before experiencing symptoms themselves (while people are still “asymptomatic”). Once you do have symptoms, the CDC says you are no longer contagious 10 days after your symptoms began.
+              Until everything about COVID-19 is fully understood, the best advice from healthcare providers to remain safe is to take prevention measure"
+
+actions:
+  - get_todays_cases
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  - utter_intro
+  - utter_symptoms
+  - utter_prevention
+  - utter_spreadness
+  - utter_time
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

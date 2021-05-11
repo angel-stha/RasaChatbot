@@ -21,13 +21,40 @@ stories:
   - intent: spread_covid
   - action: utter_spreadness
   - intent: time_infection
+  - action: utter_time
+  - action: utter_prevention
 
-- story: sad path 2
+- story: query 2
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+    - intent: symptoms_covid
+    - action: utter_symptoms
+    - action: utter_prevention
+
+
+- story: query 3
+  steps:
+    - intent: spread_covid
+    - action: utter_spreadness
+
+
+- story: query 3
+  steps:
+  - intent: intro_covid
+  - action: utter_intro
+
+
+
+
+- story: query 4
+  steps:
+    - intent: time_infection
+    - action: utter_time
+    - action: utter_prevention
+
+
+
+
+- story: query 5
+  steps:
+    - intent: today_cases
+    - action: get_todays_cases

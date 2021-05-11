@@ -126,4 +126,9 @@ nlu:
     - When will an infected person become healthy?
     - How long will I be infected?
     - How long does corona take to be cured?
+- intent: today_cases
+  examples: |
+    - What is the cases today?
+    - Number of cases today?
+
 
